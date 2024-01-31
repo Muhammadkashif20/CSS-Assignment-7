@@ -8,169 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(img/b91dc2113881469c07ac99ad9a024a01.jpg);
-        }
-
-        .Container {}
-
-        .leftsidechat {
-            width: 370px;
-            height: 670px;
-            background-color: rgb(31, 31, 31);
-        }
-
-        .whatsappicon {
-            width: 25px;
-            margin-top: 10px;
-            margin-left: 10px;
-            display: inline-block;
-
-
-        }
-
-        p {
-            color: white;
-            font-size: 20px;
-            display: inline-block;
-            margin-left: 10px;
-
-
-        }
-
-        .chats {}
-
-        .chat {
-            margin-top: 10px;
-            border-radius: 50px;
-            width: 45px;
-            margin-left: 15px;
-            display: inline-block;
-            position: relative;
-
-        }
-
-        h3 {
-            color: white;
-            display: inline-block;
-            font-size: x-large;
-            font-weight: 300;
-            margin-left: 15px;
-            position: absolute;
-        }
-
-        .chatsicons {
-            display: inline-block;
-            position: relative;
-        }
-
-        .chaticon1 {
-            display: inline-block;
-            position: absolute;
-            left: 220px;
-            font-size: large;
-            bottom: 5px;
-        }
-
-        .chaticon2 {
-            display: inline-block;
-            position: absolute;
-            left: 270px;
-            font-size: large;
-            bottom: 3px;
-
-        }
-
-        .border {}
-
-        .input {
-            border: none;
-            background-color: rgb(31, 31, 31);
-            margin-top: 20px;
-            margin-left: 40px;
-            color: white;
-            font-size: 16px;
-            outline: none;
-            box-sizing: border-box;
-        }
-
-        .input:hover {
-            border-bottom: 1px solid green;
-        }
-
-        .archieved {}
-
-        .archievedicon {
-            margin-left: 30px;
-            margin-top: 20px;
-            font-size: larger;
-        }
-
-        P {
-            margin-left: 20px;
-        }
-
-        .messages {
-            color: green;
-            font-size: medium;
-            margin-left: 160px;
-        }
-
-        .chat {}
-
-        .chatsone {
-            width: 45px;
-            border-radius: 50px;
-
-
-        }
-
-        .chatstwo {
-            width: 45px;
-            border-radius: 50px;
-
-
-        }
-
-        .chatsthree {
-            width: 45px;
-            border-radius: 50px;
-        }
-
-        .chatsfour {
-            width: 45px;
-            border-radius: 50px;
-
-        }
-
-        .h3 {
-            color: white;
-            font-size: large;
-            display: inline-block;
-
-        }
-
-        .p {
-            color: white;
-            font-size: small;
-            display: inline-block;
-        }
-        .rightside{
-            
-        }
-        .profile{
-            background-color:rgb(31, 31, 31);
-            width: 20%;
-            height: 50px;
-
-
-        }
-       
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -181,8 +19,10 @@
                 <p>Whatsapp</p>
             </div>
             <div class="chats">
-                <img src="img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" class="chat" alt="">
-                <h3>Chats</h3>
+                <div class="chat-image">
+                    <img src="img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" class="img" alt="">
+                </div>
+                <span class="whatsapp-chat-name">Chats</span>
                 <div class="chatsicons">
                     <div class="chaticon1"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></div>
                     <div class="chaticon2"><i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i></div>
@@ -205,41 +45,136 @@
                     <p class="messages">2</p>
                 </div>
             </div>
-            <div class="chat">
-                <div class="chatsone">
-                    <img src="img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" class="chat">
-                    <h3 class="h3">Muhammad Kashif</h3>
-                    <p class="p">Salam</p>
+            <br>
+            <div class="chat-container">
+                <div class="chat-first-child">
+                    <div class="image">
+                        <img src="img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" class="img">
+                    </div>
+                    <div class="name">
+                        <span >Muhammad Kashif</span><br>
+                        <span  class="changing" >This paragraph converter </span>
+                    </div>
+                    <div class="time">
+                        <span class="date">15:12</span>
+                    </div>
 
                 </div>
-                <div class="chatstwo">
-                    <img src="img/img3.jpg" class="chat" alt="">
-                    <h3>Sir Rizwan</h3>
-                    <p>Salam Sir</p>
-
+                <br>
+                <div class="chat-first-child" >
+                    <div class="image">
+                        <img src="img/download (5).jpg" class="img"  alt="">
+                    </div>
+                    <div class="name">
+                        <span>Molana ilyas Qadri</span><br>
+                        <span, class="changing">Assalam-ul-alikum</span,>
+                    </div>
+                    <div class="time">
+                       <span>2:10</span><br>
+                        <i class="fa-solid fa-circle-exclamation" style="color: #07b207;"></i>
+                    </div>
                 </div>
-                <div class="chatsthree">
-                    <img src="img/download (2).jpg" class="chat" alt="">
-
+                <br>
+                <div class="chat-first-child">
+                    <div class="image">
+                        <img src="img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" class="img">
+                    </div>
+                    
+                    <div class="name">
+                        <span >Muhammad Kashif</span><br>
+                        <span  class="changing">Wow so beautiful working</span>
+                    </div>
+                    <div class="time">
+                        <span class="date">5:20</span>
+                    </div>
+                    <br>
                 </div>
-                <div class="chatsfour">
-                    <img src="img/download (5).jpg" class="chat" alt="">
+                <br>
+                <!-- <br>
+                <br> -->
+                <div class="chat-first-child" >
+                    <div class="image">
+                        <img src="img/download (5).jpg" class="img"  alt="">
+                    </div>
+                    <div class="name">
+                        <span>Molana ilyas Qadri</span><br>
+                        <span  class="changing">Kese ho?</span>
+                    </div>
+                    <div class="time">
+                       <span class="chat-send-time">9:40</span><br>
+                        <i class="fa-solid fa-circle-exclamation" style="color: #07b207;"></i>
+                    </div>
                 </div>
+                <br>
+              
             </div>
 
         </div>
         <div class="rightside">
-          <div class="profile">
-            <img src="/img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" alt="">
 
-          </div>
+            <div class="rightside-navbar">
+                <div class="right-image">
+                    <img src="img/WhatsApp Image 2023-12-24 at 3.23.24 AM.jpeg" class="img">
+                    </div>
+                    <div class="right-name">
+                        <span >Muhammad Kashif</span>  <br> 
+                     <span class="changing">Online </span>
+                    </div>
+                    <div class="right-side-icons-navbar">
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-video" style="color: #f7f7f7;"></i>
+                       <span class="veriical-line-right-1">|
+                       </span>
+                       <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+         
+                    </div>
+            </div>
+            <div class="chats-messages">
+                <div class="me-chat">
+                    <span>Here are all the files. Let me know once you've had a look </span>
+                    <span class="right-message-time">12:15</span>
+                    <i class="fa-solid fa-check-double" style="color: #0561ff;"></i>
+                </div>
+        
+         
+         <div class="me-chat">
+            <span>Assalam-ul-alikum everyone kese ho ap sab.</span>
+            <span class="right-message-time">5:30</span>
+                    <i class="fa-solid fa-check-double" style="color: #0561ff;"></i>
+         </div>
+         <div class="me-chat">
+            <span>Election hone wale hai </span>
+            <span class="right-message-time">1:20</span>
+                    <i class="fa-solid fa-check-double" style="color: #0561ff;"></i>
+         </div>
+         <div class="me-chat">
+            <span>Ap sab tayyar ho Election ke liye ??? </span>
+            <span class="right-message-time">9:55</span>
+                    <i class="fa-solid fa-check-double" style="color: #0561ff;"></i>
+         </div>
+         
+         <div class="you-chat">
+            <span>Ok ! Yes</span>
+            <span class="right-message-time-you-chat">10:10</span>
+                    
+         </div>
+        <div class="right-footer">
+            <footer>
+                <i class="fa-regular fa-face-smile" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-paperclip" style="color: #ffffff;"></i>
+                <input type="text" placeholder="Type a message" class="input-footer">
+                <i class="fa-solid fa-paper-plane" style="color: #ffffff;"></i>
+            </footer>
         </div>
         </div>
-
-
-
-
     </div>
+        </div>
+    </div>
+
+
+
+
+  
 </body>
 
 </html>
